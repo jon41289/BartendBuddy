@@ -1,0 +1,75 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+
+
+<MudGrid class="pt-5">
+    <MudItem  xs="12" sm="6">
+        <MudCard>
+            <MudGrid Spacing="0"> @* Remove spacing between grid items *@
+                <MudItem xs="4" sm="4"> @* First column takes full width on small screens, half on medium and larger *@
+                    <MudImage Src="https://picsum.photos/id/237/200/200" Fluid="true" Alt="Description of your image" />
+                </MudItem>
+                <MudItem xs="8" sm="8"> @* Second column takes full width on small screens, half on medium and larger *@
+                    <MudCardContent>
+                        <MudText Typo="Typo.h5">Card Title</MudText>
+                        <MudText Typo="Typo.body2">
+                            This is the content for the second column of the card.
+                            You can place any text, buttons, or other components here.
+                        </MudText>
+                        <MudDivider Class="mt-1 mb-1 line-hight"/>
+                        <MudCardActions>
+                            <MudButton Variant="Variant.Text" Color="Color.Primary">Action 1</MudButton>
+                            <MudButton Variant="Variant.Text" Color="Color.Secondary">Action 2</MudButton>
+                        </MudCardActions>
+                    </MudCardContent>
+                </MudItem>
+            </MudGrid>
+        </MudCard>
+
+    </MudItem>
+    <MudItem xs="12" sm="6">
+        <MudCard>
+            <MudCardContent>
+                Card Content 2
+            </MudCardContent>
+        </MudCard>
+    </MudItem>
+</MudGrid>
+
+
+
+<style>
+    .my-image-fill {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* or contain */
+    }
+</style>
+
+@code{
+    ObjectFit ImageFit = ObjectFit.Cover;
+}
+
+    @* <MudCardHeader>
+        <CardHeaderAvatar>
+            <MudAvatar Color="Color.Secondary">I</MudAvatar>
+        </CardHeaderAvatar>
+        <CardHeaderContent>
+            <MudText Typo="Typo.body1">Istra Croatia</MudText>
+            <MudText Typo="Typo.body2">Peninsula in Europe</MudText>
+        </CardHeaderContent>
+        <CardHeaderActions>
+            <MudIconButton Icon="@Icons.Material.Filled.Settings" Color="Color.Default" />
+        </CardHeaderActions>
+    </MudCardHeader>
+    <MudCardMedia Image="images/pilars.jpg" Height="250" />
+    <MudCardContent>
+        <MudText Typo="Typo.body2">This photo was taken in a small village in Istra Croatia.</MudText>
+    </MudCardContent>
+    <MudCardActions>
+        <MudIconButton Icon="@Icons.Material.Filled.Favorite" Color="Color.Default" />
+        <MudIconButton Icon="@Icons.Material.Filled.Share" Color="Color.Default" />
+    </MudCardActions> *@
+@* </MudCard> *@

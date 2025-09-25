@@ -1,0 +1,12 @@
+/Users/jonathaninterlandi/Desktop/practiceProjects/BartendBuddy/BartendBuddy/Bartender.shared/bin/Debug/net9.0/Bartender.shared.deps.json
+/Users/jonathaninterlandi/Desktop/practiceProjects/BartendBuddy/BartendBuddy/Bartender.shared/bin/Debug/net9.0/Bartender.shared.dll
+/Users/jonathaninterlandi/Desktop/practiceProjects/BartendBuddy/BartendBuddy/Bartender.shared/bin/Debug/net9.0/Bartender.shared.pdb
+/Users/jonathaninterlandi/Desktop/practiceProjects/BartendBuddy/BartendBuddy/Bartender.shared/obj/Debug/net9.0/Bartender.shared.csproj.AssemblyReference.cache
+/Users/jonathaninterlandi/Desktop/practiceProjects/BartendBuddy/BartendBuddy/Bartender.shared/obj/Debug/net9.0/Bartender.shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jonathaninterlandi/Desktop/practiceProjects/BartendBuddy/BartendBuddy/Bartender.shared/obj/Debug/net9.0/Bartender.shared.AssemblyInfoInputs.cache
+/Users/jonathaninterlandi/Desktop/practiceProjects/BartendBuddy/BartendBuddy/Bartender.shared/obj/Debug/net9.0/Bartender.shared.AssemblyInfo.cs
+/Users/jonathaninterlandi/Desktop/practiceProjects/BartendBuddy/BartendBuddy/Bartender.shared/obj/Debug/net9.0/Bartender.shared.csproj.CoreCompileInputs.cache
+/Users/jonathaninterlandi/Desktop/practiceProjects/BartendBuddy/BartendBuddy/Bartender.shared/obj/Debug/net9.0/Bartender.shared.dll
+/Users/jonathaninterlandi/Desktop/practiceProjects/BartendBuddy/BartendBuddy/Bartender.shared/obj/Debug/net9.0/refint/Bartender.shared.dll
+/Users/jonathaninterlandi/Desktop/practiceProjects/BartendBuddy/BartendBuddy/Bartender.shared/obj/Debug/net9.0/Bartender.shared.pdb
+/Users/jonathaninterlandi/Desktop/practiceProjects/BartendBuddy/BartendBuddy/Bartender.shared/obj/Debug/net9.0/ref/Bartender.shared.dll

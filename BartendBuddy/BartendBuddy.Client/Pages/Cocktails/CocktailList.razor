@@ -1,0 +1,48 @@
+﻿@page "/Cocktails"
+@using Bartender.shared.IRepositories
+@using Bartender.shared.Models
+@rendermode InteractiveAuto
+
+@inject ICocktailRepository cocktailService
+
+<h3>CocktailList</h3>
+
+ @foreach(var cocktail in AllCocktails)
+ {
+    <MudCard Class="mb-4">
+        <MudCardHeader>
+            <MudText Typo="Typo.h5">@cocktail.Name</MudText>
+        </MudCardHeader>
+        <MudCardContent>
+            <MudText>@cocktail.Discription</MudText>
+            <MudText>Ingredients: @string.Join(", ", cocktail.Ingredients)</MudText>
+        </MudCardContent>
+        <MudCardActions>
+            <MudButton Variant="Variant.Filled" Color="Color.Primary">View Details</MudButton>
+        </MudCardActions>
+    </MudCard>
+ }
+
+@code {
+    public List<Cocktail> AllCocktails { get; set; } = new List<Cocktail>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Simulate fetching data from a service
+       await FetchCocktailsAsync();
+    }
+
+    private async Task FetchCocktailsAsync()
+    {
+        List<Cocktail> cocktails = await cocktailService.GetAllCocktailsAsync();
+        
+        AllCocktails.Clear();
+
+        if(cocktails is null) return;
+
+        foreach (var item in cocktails)
+        {
+            AllCocktails.Add(item);
+        }
+    }
+}

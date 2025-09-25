@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.0.0
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BartendBuddy", "BartendBuddy\BartendBuddy.csproj", "{18526040-2564-440D-8AA8-21744113CB93}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BartendBuddy.Client", "BartendBuddy.Client\BartendBuddy.Client.csproj", "{D4F72AE5-CD2E-41FD-AB79-95AC18EB4148}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bartender.shared", "Bartender.shared\Bartender.shared.csproj", "{18DF8397-41DE-478C-88F8-40E0E336E164}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18526040-2564-440D-8AA8-21744113CB93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18526040-2564-440D-8AA8-21744113CB93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18526040-2564-440D-8AA8-21744113CB93}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{18526040-2564-440D-8AA8-21744113CB93}.Debug|x64.Build.0 = Debug|Any CPU
+		{18526040-2564-440D-8AA8-21744113CB93}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{18526040-2564-440D-8AA8-21744113CB93}.Debug|x86.Build.0 = Debug|Any CPU
+		{18526040-2564-440D-8AA8-21744113CB93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18526040-2564-440D-8AA8-21744113CB93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18526040-2564-440D-8AA8-21744113CB93}.Release|x64.ActiveCfg = Release|Any CPU
+		{18526040-2564-440D-8AA8-21744113CB93}.Release|x64.Build.0 = Release|Any CPU
+		{18526040-2564-440D-8AA8-21744113CB93}.Release|x86.ActiveCfg = Release|Any CPU
+		{18526040-2564-440D-8AA8-21744113CB93}.Release|x86.Build.0 = Release|Any CPU
+		{D4F72AE5-CD2E-41FD-AB79-95AC18EB4148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4F72AE5-CD2E-41FD-AB79-95AC18EB4148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4F72AE5-CD2E-41FD-AB79-95AC18EB4148}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D4F72AE5-CD2E-41FD-AB79-95AC18EB4148}.Debug|x64.Build.0 = Debug|Any CPU
+		{D4F72AE5-CD2E-41FD-AB79-95AC18EB4148}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D4F72AE5-CD2E-41FD-AB79-95AC18EB4148}.Debug|x86.Build.0 = Debug|Any CPU
+		{D4F72AE5-CD2E-41FD-AB79-95AC18EB4148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4F72AE5-CD2E-41FD-AB79-95AC18EB4148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4F72AE5-CD2E-41FD-AB79-95AC18EB4148}.Release|x64.ActiveCfg = Release|Any CPU
+		{D4F72AE5-CD2E-41FD-AB79-95AC18EB4148}.Release|x64.Build.0 = Release|Any CPU
+		{D4F72AE5-CD2E-41FD-AB79-95AC18EB4148}.Release|x86.ActiveCfg = Release|Any CPU
+		{D4F72AE5-CD2E-41FD-AB79-95AC18EB4148}.Release|x86.Build.0 = Release|Any CPU
+		{18DF8397-41DE-478C-88F8-40E0E336E164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18DF8397-41DE-478C-88F8-40E0E336E164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18DF8397-41DE-478C-88F8-40E0E336E164}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{18DF8397-41DE-478C-88F8-40E0E336E164}.Debug|x64.Build.0 = Debug|Any CPU
+		{18DF8397-41DE-478C-88F8-40E0E336E164}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{18DF8397-41DE-478C-88F8-40E0E336E164}.Debug|x86.Build.0 = Debug|Any CPU
+		{18DF8397-41DE-478C-88F8-40E0E336E164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18DF8397-41DE-478C-88F8-40E0E336E164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18DF8397-41DE-478C-88F8-40E0E336E164}.Release|x64.ActiveCfg = Release|Any CPU
+		{18DF8397-41DE-478C-88F8-40E0E336E164}.Release|x64.Build.0 = Release|Any CPU
+		{18DF8397-41DE-478C-88F8-40E0E336E164}.Release|x86.ActiveCfg = Release|Any CPU
+		{18DF8397-41DE-478C-88F8-40E0E336E164}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0CD06C0D-FE45-4E32-B9EE-96E2AF69D2A6}
+	EndGlobalSection
+EndGlobal
