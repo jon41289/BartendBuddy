@@ -1,5 +1,75 @@
-﻿<h3>CocktailDetails</h3>
+﻿@page "/cocktail/drink-recipes/{Id:int}"
+@using Bartender.shared.IRepositories
+@using Bartender.shared.Models
 
+@inject ICocktailRepository cocktailService
+@rendermode InteractiveAuto
+
+<MudGrid class="pt-5" Spacing="1">
+    <MudItem xs="12">
+        <MudPaper Class="pl-3 mud-width-full ">
+            <MudStack>
+                <h1> @cocktail.Name</h1>
+
+                <MudRating ReadOnly="true" SelectedValue="@cocktail.Rating" />
+            </MudStack>
+            <MudDivider DividerType="DividerType.Middle"/>
+        </MudPaper>
+    </MudItem>
+    
+    <MudItem xs="4" sm="2">
+       <MudPaper class="pl-3" height="100%">
+            <MudText typo="Typo.h6">Main Spirt</MudText>
+
+            <MudStack Row="true" class="ml-3" AlignItems="AlignItems.Center" Spacing="5">
+                <MudIcon Icon="@Icons.Material.Filled.LocalBar" Color="Color.Primary" Size="Size.Small" />
+                <MudText>@cocktail.MainSpirt</MudText>
+            </MudStack>
+            <MudText typo="Typo.h6">Flavor</MudText>
+
+            <MudStack Row="true" class="ml-3" AlignItems="AlignItems.Center" Spacing="5">
+                <MudIcon Icon="@Icons.Material.Filled.LocalCafe" Color="Color.Primary" Size="Size.Small" />
+                <MudText>@cocktail.Flavor</MudText>
+            </MudStack>
+            
+            <MudText typo="Typo.h6">Skill Level</MudText>
+
+            <MudStack Row="true" class="ml-3" AlignItems="AlignItems.Center" Spacing="5">
+                <MudIcon Icon="@Icons.Material.Filled.BarChart" Color="Color.Primary" Size="Size.Small" />
+                <MudText>@cocktail.SkillLevel</MudText>
+            </MudStack>
+       </MudPaper>
+    </MudItem>
+    <MudItem xs="8" sm="10">
+        <MudPaper Class="d-flex justify-center pa-3" Height="100%">
+            @cocktail.Discription
+         </MudPaper>
+    </MudItem>
+    <MudItem xs="12"sm="6">
+        <MudPaper Class="pl-3" Height="100%">
+            <MudText typo="Typo.h4">Ingredients</MudText>
+            <MudText style="white-space:pre;"> @cocktail.Ingredients</MudText>
+        </MudPaper>
+    </MudItem>
+    <MudItem xs="12" sm="6">
+        <MudPaper Class="pl-3" Height="100%">
+            <MudText typo="Typo.h4">Instructions</MudText>
+            <MudText style="white-space:pre-wrap">@cocktail.Instructions </MudText>
+       </MudPaper>
+    </MudItem>
+
+    <MudItem xs="12">
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" href="/Cocktails" FullWidth="true">Back to Cocktails</MudButton>
+    </MudItem>
+</MudGrid>
 @code {
+    [Parameter]
+    public int Id { get; set; }
 
+    Cocktail? cocktail { get; set; } = new Cocktail();
+
+    protected override async Task OnInitializedAsync()
+    { 
+        cocktail = await cocktailService.GetCocktailByIdAsync(Id);
+    }
 }

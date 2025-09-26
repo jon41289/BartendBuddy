@@ -5,24 +5,49 @@
 
 @inject ICocktailRepository cocktailService
 
-<h3>CocktailList</h3>
+<h1 class="mt-2">CocktailList</h1>
 
+<MudGrid class="pt-5">
  @foreach(var cocktail in AllCocktails)
  {
-    <MudCard Class="mb-4">
-        <MudCardHeader>
-            <MudText Typo="Typo.h5">@cocktail.Name</MudText>
-        </MudCardHeader>
-        <MudCardContent>
-            <MudText>@cocktail.Discription</MudText>
-            <MudText>Ingredients: @string.Join(", ", cocktail.Ingredients)</MudText>
-        </MudCardContent>
-        <MudCardActions>
-            <MudButton Variant="Variant.Filled" Color="Color.Primary">View Details</MudButton>
-        </MudCardActions>
-    </MudCard>
+    <MudItem  xs="12" sm="6">
+        <MudCard Class="mb-4">
+            <MudGrid Spacing="0"> @* Remove spacing between grid items *@
+                <MudItem xs="4" sm="4"> @* First column takes full width on small screens, half on medium and larger *@
+                    <MudImage Src="https://picsum.photos/id/237/200/200" Fluid="true" Alt="Description of your image" />
+                </MudItem>
+                <MudItem xs="8" sm="8"> @* Second column takes full width on small screens, half on medium and larger *@
+                    <MudCardContent>
+                        <MudText Typo="Typo.h5">@cocktail.Name</MudText>
+                        <MudDivider Class="mt-1 mb-1 line-hight"/>
+                        <MudText><h3>Spirt:</h3> @cocktail.MainSpirt</MudText>
+                        <MudText><h3><b>Flavor: </b></h3> @cocktail.Flavor</MudText>
+                        <MudStack Row="true" AlignItems="AlignItems.Center" Spacing="2">
+                            <MudText Style="font-weight: bold; font-size:18px;">Skill Level: </MudText>
+                            <MudRating ReadOnly="true" SelectedValue="@cocktail.SkillLevel" />
+                        </MudStack>
+                        <MudDivider Class="mt-1 mb-1 line-hight"/>
+                        <MudCardActions>
+                             <MudButton href="@($"/cocktail/drink-recipes/{cocktail.Id}")"
+                                    Variant="Variant.Filled"
+                                    Color="Color.Primary" >
+                                        View Details
+                                </MudButton>
+                        </MudCardActions>
+                    </MudCardContent>
+                </MudItem>
+            </MudGrid>
+        </MudCard>
+    </MudItem>
  }
+</MudGrid>
 
+<style>
+h3{
+    display:inline;
+    font-weight:bold;
+}
+</style>
 @code {
     public List<Cocktail> AllCocktails { get; set; } = new List<Cocktail>();
 
